@@ -1,0 +1,28 @@
+#Google captcha
+GOOGLE_SERVICE_KEY = "6LeNarYUAAAAAE4pIE-9HtHJ4QQBXVfefwDsGMCC"
+
+#JWT Bearer
+JWT_EXP = "72h"
+JWT_SECRET = "bnPdjBB@@2vg3yYfcmQP@cXtnhX6m0TQ*wx683!GvzKKeRq3"
+JWT_ACCESS = "GFFL2cRq7TQ3ejBp7Af6"
+
+
+#MySql Server 
+MYSQL_HOST = "localhost"
+MYSQL_PORT = 3306
+MYSQL_USER = "root"
+MYSQL_PASS = "12345678"
+MYSQL_DB = "vst"
+MYSQL_SSL = false
+MYSQL_CA = ""
+
+#Redis Server
+REDIS_HOST = 'localhost'
+REDIS_PORT = 32782
+REDIS_EOQ = true
+
+#REDIS_NAME = 'redis123'
+#REDIS_PASS = 'lolka123'
+#REDIS_ROLE = 'master'
+#REDIS_SSL = false
+#REDIS_CA = ''

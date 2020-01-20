@@ -1,0 +1,10 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "monorepo": true,
+  "projects": {
+  },
+  "compilerOptions": {
+    "webpack": true
+  }
+}
