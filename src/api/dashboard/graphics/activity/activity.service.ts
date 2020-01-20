@@ -4,7 +4,7 @@ import { Repository } from 'typeorm';
 import { ActivityGraphicsDTO } from './DTO/ActivityGraphicsDTO';
 import { SheetEntity } from 'src/entities/sheet.entity';
 import { UserEntity } from 'src/entities/user.entity';
-import { EnumerableTime } from 'src/utils/enumerableTime';
+import { timeMap } from 'src/utils/enumerableTime';
 import { RedisService } from 'libs/redis/src';
 import { SheetStatus } from 'src/entities/types/sheetStatus.enum';
 
@@ -19,7 +19,7 @@ export class ActivityService {
         let values: any = await this.cacheService.getJson(firewall);
         if (values) return values;
 
-        const pointers = EnumerableTime(params.sdr,
+        const pointers = timeMap(params.sdr,
             params.edr, 24);
 
         const state = await Promise.all([

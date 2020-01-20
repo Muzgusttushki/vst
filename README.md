@@ -17,14 +17,15 @@ $ git clone https://github.com/IvanChikishev/vst.git
 ## Запуск
 
 ```bash
-# разработка
+# development
 $ npm run start
 
-# разработка (пре-релиз)
+# watch mode
 $ npm run start:dev
 
-# релиз
+# release mode
 $ npm run start:prod
 ```
 
 ## Документация
+

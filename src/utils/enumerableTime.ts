@@ -1,4 +1,4 @@
-export function EnumerableTime(x: Date, y: Date, pointers: number = 24) {
+export function timeMap(x: Date, y: Date, pointers: number = 24) {
     const _x = new Date(x),
         _y = new Date(x);
 
@@ -17,4 +17,11 @@ export function EnumerableTime(x: Date, y: Date, pointers: number = 24) {
             return [new Date(_x.toUTCString()), new Date(_y.toUTCString())]
         } finally { _x.setUTCHours(_x.getUTCHours() + _factorInterval); }
     })
+}
+
+export function timeBackward(x: Date, y: Date) {
+    const _x = new Date(x),
+        _y = new Date(x);
+    
+    
 }
